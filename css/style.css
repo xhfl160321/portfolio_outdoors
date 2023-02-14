@@ -1,0 +1,402 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.clearfix::before, .clearfix::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+a, p{
+  text-decoration: none;
+  font-family: 'Cafe24ClassicType-Regular';
+  color: #FAF8F0;
+}
+
+ul{
+  list-style: none;
+  text-align: center;
+}
+
+@font-face {
+    font-family: 'ChosunKm';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunKm.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* wrap */
+#wrap{
+  height: 100vh;
+  width: 100%;
+/*   background: green; */
+  margin: 0 auto;
+}
+
+#page1Wrap, #page2Wrap, #page3Wrap, #page4Wrap{
+  width: 100%;
+  height: 1000px;
+/*   background: red; */
+  position: relative;
+}
+
+/* #page1Wrap */
+#page1Wrap{
+/*   background: black; */
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 25%,
+    rgba(0,0,0,0.5) 45%,
+    rgba(0,0,0,0.7) 70%,	
+    rgba(0,0,0,0.9) 100%
+  );
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.img1 img, .img2 img{
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  position: absolute;
+}
+
+header{
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+.menu{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu > ul{
+  width: 100%;
+  
+}
+.menu > ul > li{
+  float: left;
+  width: 25%;
+}
+.menu > ul > li > a{
+  display: block;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
+}
+
+.logo{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1
+}
+.logo img{
+/*   display: block; */
+  width: 50px;
+  height: 50px;
+}
+
+.p1Mid{
+  width: 100%;
+  height: 900px;
+/*   background: #111; */
+}
+
+.p1Title{
+  width: 100%;
+  height: 500px;
+}
+
+.p1Title a{
+  display: block;
+  font-size: 80px;
+  font-family: 'ChosunKm';
+  letter-spacing: 25px;
+  padding-top: 15%;
+}
+
+.p1Sub{
+  width: 100%;
+  height: 400px;
+}
+
+.p1Sub a{
+  display: block;
+  font-size: 18px;
+  font-family: 'Noto Sans KR', sans-serif;
+  letter-spacing: 8px;
+  padding-top: 3%;
+}
+
+.p1Mid div{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.revealUp {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* page2Wrap */
+#page2Wrap{
+  background: #000;
+}
+
+.p2Con, .p3Con{
+  width: 100%;
+  height: 250px;
+}
+/* .p2Con div, .p3Con div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.p2Title, .p3Title{
+  width: 100%;
+  height: 100px;
+}
+.p2Sub, .p3Sub{
+  width: 100%;
+  height: 150px;
+}
+.p2Title p, .p3Title p{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 30px; 
+  justify-content: center;
+  align-items: center;
+}
+.p2Sub p, .p3Sub p{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 30px;
+/*   padding-top: 30px; */
+}
+
+.p2Img{
+  width: 100%;
+  height: 750px;
+  position: relative;
+}
+
+.p2Img > ul{
+  width: 100%;
+  height: 100%;
+/*   display: flex; */
+}
+.p2Img > ul > li{
+  float: left;
+  width: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.p2Img > ul > li > a{
+  display: block;
+}
+.p2Img img{
+  width: 400px;
+  height: 550px;
+  transition: all 1s;
+}
+
+.p2Img img:hover{
+  -webkit-filter: brightness(20%);
+  filter: brightness(20%) blur(2px); 
+  opacity: 0.8;
+}
+
+.p2Img > ul > li:first-child{
+  padding-left: 15%;
+}
+
+.p2ImgCon{
+  position:absolute;
+  width: 300px;
+  height: 70px;
+  line-height: 35px;
+  padding-bottom: 80px;
+}
+
+.p2ImgCon > li{
+  width: 100%;
+  height: 100%;
+/*   padding-top: 250px; */
+}
+
+.p2ImgCon p{
+/*   -webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: white;
+  color: transparent; */
+}
+
+.p2ImgCon > li > p:first-child{
+  font-family: 'ChosunKm';  
+  font-size: 25px;
+  color: #D93829 ;
+  font-weight: bold;
+}
+
+.p2ImgCon > li > p:last-child{
+  font-family: 'Noto Sans KR', sans-serif; 
+  color: #D93829;
+  font-weight: bold;
+}
+
+/* #page3Wrap */
+#page3Wrap{
+  background: #000;
+}
+
+.p3Con{
+  width: 100%;
+  height: 250px;
+/*   background: #111; */
+}
+.p3Img{
+  width: 100%;
+  height: 450px;
+/*   background: #222; */
+}
+.p3ImgCon{
+  width: 100%;
+  height: 300px;
+/*   background: #333; */
+}
+
+.p3Img img{
+  width: 550px;
+  height: 380px;
+}
+.p3Img > ul{
+  width: 100%;
+}
+.p3Img > ul > li{
+  float: left;
+  width: 33%;
+  padding-top: 50px;
+}
+.p3Img > ul > li:first-child{
+  padding-left: 17%;
+}
+
+.p3ImgCon > ul{
+  width: 100%;
+}
+
+.p3ImgCon > ul > li{
+  float: left;
+  width: 33%;
+  padding-top: 20px;
+}
+
+.p3ImgCon > ul > li:first-child{
+  padding-left: 17%;
+}
+
+.p3ImgCon > ul > li > p{
+  line-height: 40px;
+}
+
+.p3ImgCon > ul > li > p:first-child{
+  
+}
+.p3ImgCon > ul > li > p:nth-child(2){
+  font-family: 'ChosunKm';
+  font-size: 25px;
+}
+.p3ImgCon > ul > li > p:last-child{
+  line-height: 23px;
+  padding-top: 3%;
+  letter-spacing: 1px;
+}
+
+/* page4Wrap */
+#page4Wrap{
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0) 25%,
+    rgba(0,0,0,0.5) 45%,
+    rgba(0,0,0,0.7) 70%,	
+    rgba(0,0,0,0.9) 100%
+  );
+}
+
+.p4Header{
+  width: 100%;
+  height: 150px;
+  text-align: center;
+}
+.p4Header p{
+  display: block;
+  padding-top: 125px;
+}
+.p4Header a{
+  color: #0AA5FC;
+  font-size: 15px;
+  width: 300px;
+  height: 100px;
+  font-family: 'Noto Sans KR', sans-serif; 
+  transition: all 1s ease;
+}
+span{
+  color: #0AA5FC;
+  font-size: 15px;
+  width: 300px;
+  height: 100px;
+  font-family: 'Noto Sans KR', sans-serif; 
+}
+
+.p4Header a:hover{
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.p4Mid{
+  width: 100%;
+  height: 725px;
+}
+
+.p4Footer{
+  width: 100%;
+  height: 125px;
+  background: rgba(0,0,0,0.8) 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p4Footer a{
+  width: 600px;
+  height: 20px;
+  font-size: 14px;
+  color: gray;
+  font-family: 'Noto Sans KR', sans-serif; 
+  pointer-events: none;
+}
